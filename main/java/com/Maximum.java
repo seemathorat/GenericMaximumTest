@@ -17,6 +17,17 @@ class Maximum {
         else
             return z;
     }
+
+    public String getStringMaximum(String x, String y, String z) {
+        if (x.compareTo(y) > 0 && x.compareTo(z) > 0)
+            return x;
+        else if (y.compareTo(z) > 0 && y.compareTo(x) > 0)
+            return y;
+        else
+            return z;
+    }
 }
+
+
 
 

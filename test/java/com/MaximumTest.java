@@ -47,4 +47,22 @@ public class MaximumTest{
         double result = Max.getDoubleMaximum(5.0,4.0,9.0);
         Assert.assertEquals(9.0,result,0.001);
     }
+
+    @Test
+    public void given_Max_String_IS_Greater_First_Position_number_Returns_True_Test() {
+        String result = Max.getStringMaximum("Peach", "Banana", "Apple");
+        Assert.assertEquals("Peach", result);
+    }
+
+    @Test
+    public void given_Max_String_IS_Greater_Second_Position_number_Returns_True_Test() {
+        String result = Max.getStringMaximum("Apple","Peach","Banana");
+        Assert.assertEquals("Peach", result);
+    }
+
+    @Test
+    public void given_Max_String_IS_Greater_Third_Position_number_Returns_True_Test() {
+        String result = Max.getStringMaximum("Apple", "Peach", "banana");
+        Assert.assertEquals("banana", result);
+    }
 }
