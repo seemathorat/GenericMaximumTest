@@ -28,4 +28,23 @@ public class MaximumTest{
         int result = Max.getIntegerMaximum(4,5,9);
         Assert.assertEquals(9,result);
     }
+
+
+    @Test
+    public void given_Max_Double_Number_IS_Greater_first_Position_number_Returns_True_Test() {
+        double result = Max.getDoubleMaximum(9.0,4.0,5.0);
+        Assert.assertEquals(9.0, result, 0.001);
+    }
+
+    @Test
+    public void given_Max_Double_Number_IS_Greater_Second_Position_number_Returns_True_Test() {
+        double result = Max.getDoubleMaximum(4.0,9.0,5.0);
+        Assert.assertEquals(9.0, result,0.001);
+    }
+
+    @Test
+    public void given_Max_Double_Number_IS_Greater_Third_Position_number_Returns_True_Test() {
+        double result = Max.getDoubleMaximum(5.0,4.0,9.0);
+        Assert.assertEquals(9.0,result,0.001);
+    }
 }
